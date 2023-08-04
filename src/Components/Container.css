@@ -1,0 +1,136 @@
+.grid-box {
+    display: grid;
+    background: rgb(139, 92, 246);
+    background: linear-gradient(
+      90deg,
+      rgba(139, 92, 246, 1) 0%,
+      rgba(227, 155, 215, 1) 17%,
+      rgba(227, 155, 215, 0) 47%,
+      rgba(227, 155, 215, 1) 83%,
+      rgba(139, 92, 246, 1) 100%
+    );
+    grid-template-columns: 2.1fr 3fr 3fr;
+    grid-gap: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .item {
+    background-color: #9ac1f747;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-title {
+    padding: 10px;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 5rem 1rem 1rem; /* Adjusted the margin for smaller devices */
+  }
+  
+  .home-para {
+    font-size: 1.1rem;
+    margin: 0rem 1rem 1rem;
+    line-height: 1.5;
+  }
+  
+  .item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 15px;
+    background-color: #1d094d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: larger;
+    cursor: pointer;
+    margin-left: 25px;
+    align-self: flex-start !important;
+    margin-top: 1rem;
+    overflow: hidden;
+    transform-origin: right center;
+    transition: background-color 5s ease, transform 2s ease-in-out;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  /* Hover effect */
+  .item-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #130626;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .item-btn:hover::before {
+    left: 0;
+  }
+  
+  .item-btn:hover {
+    transform: scale3d(1, 1, 1);
+    background-color: #ec4899;
+  }
+  
+  /* Text change on hover */
+  .item-btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Optional: Adjust the styles for responsiveness */
+  @media screen and (max-width: 768px) {
+    .grid-box {
+      grid-template-columns: 1fr; /* Change to one column layout on smaller devices */
+      padding: 10px; /* Reduce padding for smaller devices */
+    }
+  
+    .home-title {
+      font-size: 2rem; /* Adjust the font size for smaller devices */
+      margin: 2rem 1rem 1rem; /* Adjusted the margin for smaller devices */
+    }
+  
+    .home-para {
+      font-size: 1rem; /* Adjust the font size for smaller devices */
+      margin-left: 0; /* Remove the left margin for smaller devices */
+    }
+  
+    .item-btn {
+      font-size: medium; /* Adjust the font size for smaller devices */
+      margin-left: 0; /* Remove the left margin for smaller devices */
+    }
+  
+    .item img {
+      margin-top: 30px; /* Adjust the margin for the image on smaller devices */
+    }
+  }
+  

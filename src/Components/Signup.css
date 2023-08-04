@@ -1,0 +1,155 @@
+/* App.css */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .input-field :focus {
+    outline: none;
+    border-color: #8B5CF6;
+    box-shadow: 0 0 4px #8B5CF6;
+  }
+  .popup-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+  }
+  .submit-btn {
+    background-color: #8B5CF6;
+    color: #fff;
+    align-self: center;
+    padding: 10px 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #EC4899;
+  }
+  
+  .submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #8B5CF6;
+  }
+ 
+  .login {
+    align-items: center; 
+    overflow: hidden;
+    justify-content: center;
+    background-image: url("https://phoneky.co.uk/thumbs/wallpapers/2022/p2/abstract/20/wal4ab28.jpg");
+  }
+  .login__container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .login__container > img {
+    object-fit: contain;
+    height: 8em;
+  }
+  .login__container > h1 {
+    color: #989898;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0.8em 0;
+  }
+  
+  .login__container > button {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    margin: 0 0 1em 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    overflow: hidden;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+    width: 17em;
+    padding: 0.3em 1em;
+    transition: all 0.25s linear;
+    transform: scale(1);
+  }
+  .login__container > button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4285f4;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s linear;
+  }
+  .login__container > button:last-of-type::after {
+    background-color: #fff;
+  }
+  .login__container > button:hover::after,
+  .login__container > button:focus::after {
+    transform: scaleX(1);
+  }
+  
+  .login__google {
+    object-fit: contain;
+    height: 1.5em;
+    margin-right: 1em;
+  }
+  .login__googleBtn {
+    background-color: #fff;
+  }
+  .login__googleBtn > span {
+    font-weight: 600;
+    color: #302e2e;
+  }
+  .link-form{
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .link-form:hover{
+    text-decoration: underline;
+  }

@@ -1,0 +1,141 @@
+.profile-grid {
+    display: grid;
+    background: rgb(139, 92, 246);
+    background: linear-gradient(
+      90deg,
+      rgba(139, 92, 246, 1) 0%,
+      rgba(227, 155, 215, 1) 17%,
+      rgba(227, 155, 215, 0) 47%,
+      rgba(227, 155, 215, 1) 83%,
+      rgba(139, 92, 246, 1) 100%
+    );
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid rgb(139, 0, 0);
+  }
+  .profile-item{
+    background-color: rgb(255, 255, 254);
+    border: 1px solid red;
+  }
+  .profile-img{
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #user-profile{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+  }
+  .user-name{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 700;
+  }
+  .settings{
+    height: auto;
+    display: flex;
+    border-top: 1px solid rgb(179, 178, 178);
+    flex-direction: column;
+  }
+  .set-item{
+    border: 1px soild blue;
+    font-size: large;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+  }
+  .set-item:hover{
+    color: white;
+    word-spacing: 1px;
+   background-color: rgb(58, 55, 55);
+  }
+  .head-section{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-bottom: 1px solid rgb(197, 193, 193);
+  }
+/* UserProfile.css */
+.user-table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
+  .data-heading {
+    padding: 8px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .user-data {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  /* Input, Label, and Button Styles */
+.input-container {
+    padding: 10px;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input,
+  .input-container textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .input-container textarea {
+    resize: vertical;
+  }
+  .save-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .save-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
